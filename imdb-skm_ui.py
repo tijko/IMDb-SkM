@@ -3,7 +3,7 @@
 import wx
 import requests
 
-class Trial(wx.Frame):
+class SkM_UI(wx.Frame):
 
     def __init__(self, parent, title):
         wx.Frame.__init__(self, parent, title=title, size=(530,250))
@@ -181,6 +181,6 @@ class Trial(wx.Frame):
 
 if __name__ == '__main__':
     app = wx.App(False)
-    frame = Trial(None, 'IMDb Shortcut')
+    frame = SkM_UI(None, 'IMDb Shortcut')
     app.MainLoop()
 
