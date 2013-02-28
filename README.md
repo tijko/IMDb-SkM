@@ -25,6 +25,7 @@ Sample cmdline version:
     
     python cmdlne.py -rgdaTP
 
+    What movie/show did you wish to look up? Blade Runner
     ********************************************
 
     Title: Blade Runner
