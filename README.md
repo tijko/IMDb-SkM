@@ -1,4 +1,4 @@
-IMDbSkM
+IMDb-SkM
 =======
 
 IMDbSkM is a tool for retrieving information on your favorite(or not so favorite) tv shows and movies.  
