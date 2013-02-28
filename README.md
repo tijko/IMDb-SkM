@@ -1,17 +1,17 @@
 IMDb-SkM
 =======
 
-IMDbSkM is a tool for retrieving information on your favorite(or not so favorite) tv shows and movies.  
+IMDb-SkM is a tool for retrieving information on your favorite(or not so favorite) tv shows and movies.  
 
 As you can tell from the name, this data is coming from the well-known website http://www.imdb.com.
 Using an api provided by http://www.imdbapi.org, you can find most information on just about any
 movie or tv show.
 
-There are two IMDbSkM versions.  A UI version that uses the popular toolkit wxPython.  The GUI has
+There are two IMDb-SkM versions.  A UI version that uses the popular toolkit wxPython.  The GUI has
 checkboxes, so you can pick and chose what data you'd like to return.  There is also a command-line 
 version, that can take a number of optional arguments.
 
-IMDbSkM uses two modules that are not part of the python standard library, so you will need to install them first.
+IMDb-SkM uses two modules that are not part of the python standard library, so you will need to install them first.
 
     pip install wxPython
 
