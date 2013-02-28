@@ -27,7 +27,7 @@ def agpar():
 class MovieScraper(object):
     
     def __init__(self):
-        self.movie = raw_input('What movie did you wish to look up? ')
+        self.movie = raw_input('What movie/show did you wish to look up? ')
         self.movie = self.movie.split(' ') 
 
     def scrape(self, options):

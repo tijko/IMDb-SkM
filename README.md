@@ -7,7 +7,7 @@ As you can tell from the name, this data is coming from the well-known website h
 Using an api provided by http://www.imdbapi.org, you can find most information on just about any
 movie or tv show.
 
-There are two IMDb-SkM versions.  A UI version that uses the popular toolkit wxPython.  The GUI has
+There are two IMDb-SkM versions.  A UI version that uses the popular toolkit wxPython.  The UI has
 checkboxes, so you can pick and chose what data you'd like to return.  There is also a command-line 
 version, that can take a number of optional arguments.
 
