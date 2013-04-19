@@ -1,1 +1,1 @@
-# want to add in a select all and un-select all button.
+Link up with a user's netflix/hulu account, to see if movie/show is available.
