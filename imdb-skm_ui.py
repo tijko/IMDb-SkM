@@ -3,10 +3,11 @@
 import wx
 import requests
 
+
 class SkM_UI(wx.Frame):
 
     def __init__(self, parent, title):
-        wx.Frame.__init__(self, parent, title=title, size=(530,250))
+        wx.Frame.__init__(self, parent, title=title, size=(530, 250))
 
         vbox = wx.BoxSizer(wx.VERTICAL)
 
@@ -46,6 +47,8 @@ class SkM_UI(wx.Frame):
         self.actor = wx.CheckBox(panel, -1, pos=(265, 150), label='Actors')
         self.rating = wx.CheckBox(panel, -1, pos=(395, 150), label='Rating')
 
+        self.select_all = wx.CheckBox(panel, -1, pos=(25, 220), label='Select All')
+
         hbox2 = wx.BoxSizer(wx.HORIZONTAL)
         self.OkBtn = wx.Button(parent=panel, label='Ok', size=(70, 30))
         self.ClsBtn = wx.Button(parent=panel, label='Close', size=(70, 30))
@@ -54,6 +57,7 @@ class SkM_UI(wx.Frame):
 
         self.Bind(wx.EVT_BUTTON, self.results, self.OkBtn)
         self.Bind(wx.EVT_BUTTON, self.stpexit, self.ClsBtn)
+        self.Bind(wx.EVT_CHECKBOX, self.chkall, self.select_all)
 
         vbox.Add(hbox2, flag=wx.ALIGN_RIGHT|wx.BOTTOM, border=10)
         panel.SetSizer(vbox)
@@ -61,6 +65,27 @@ class SkM_UI(wx.Frame):
 
     def stpexit(self, event):
         self.Destroy()
+
+    def chkall(self, event):
+        self.genre.SetValue(event.IsChecked())
+        self.rated.SetValue(event.IsChecked())
+        self.lang.SetValue(event.IsChecked())
+        self.poster.SetValue(event.IsChecked())
+
+        self.url.SetValue(event.IsChecked())
+        self.ID.SetValue(event.IsChecked())
+        self.cntry.SetValue(event.IsChecked())
+        self.location.SetValue(event.IsChecked())
+
+        self.writer.SetValue(event.IsChecked())
+        self.plot.SetValue(event.IsChecked())
+        self.year.SetValue(event.IsChecked())
+        self.runtme.SetValue(event.IsChecked())
+
+        self.release.SetValue(event.IsChecked())
+        self.director.SetValue(event.IsChecked())
+        self.actor.SetValue(event.IsChecked())
+        self.rating.SetValue(event.IsChecked())
 
     def results(self, event):
         m = ''
